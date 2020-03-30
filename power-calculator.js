@@ -7,10 +7,7 @@ function powerCalculator(base, exponent){
   if( exponent === 0){
     return base = 1;
   }
-  const powerBase = base;
-  //console.log(base * powerBase);
 
-  powerCalculator(base, exponent - 1);
   return base * powerCalculator(base, exponent -1 );
 }
 
