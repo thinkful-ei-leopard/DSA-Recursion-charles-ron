@@ -15,3 +15,6 @@ function stringSplitter(str, separator='/') {
 
 const result = stringSplitter('12/20/2020');
 console.log(result);
+
+// INPUT: string 'hello world', separator=' '
+// OUPUT: ['hello, 'world']

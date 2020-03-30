@@ -1,27 +1,29 @@
 /**
- * @param {integer} num number of the fibonacci sequence
+ * @param {number} num integer number of the fibonacci sequence
  */
 function fibonacci(num) {
-
+  // base case
   if(num === 1){
     return [0, 1];
   }
-
+  // general case
   let sequence = fibonacci(num - 1);
   sequence.push(sequence[sequence.length - 1] + sequence[sequence.length - 2] );
   return sequence;
-
 }
 
 const result = fibonacci(4);
 console.log(result);
+// INPUT: number 4
+// OUTPUT: [1, 1, 2, 3]
 
 // INPUT: 4
 // OUTPUT: [1, 1, 2, 3]
 // 1 [1]
 // 2 [1, 0+1]
 // 3 [1, 1, 1+1]
-// 4 [1, 1, 2, 2+1]
+// 4 [1, 1, 2, 1+2]
+// 5 [1, 1, 2, 3, 2+3]
 
 
 // INPUT OUTPUT 
