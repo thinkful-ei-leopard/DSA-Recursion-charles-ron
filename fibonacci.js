@@ -6,6 +6,9 @@ function fibonacci(num) {
   if(num === 1){
     return [0, 1];
   }
+  if(num < 1) {
+    return 'num must be a number greater than 1';
+  }
   // general case
   let sequence = fibonacci(num - 1);
   sequence.push(sequence[sequence.length - 1] + sequence[sequence.length - 2] );
